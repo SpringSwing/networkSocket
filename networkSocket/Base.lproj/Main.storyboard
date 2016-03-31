@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uHI-GU-IXN">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lW2-Rc-tga">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="发送"/>
+                                <connections>
+                                    <action selector="sendMsg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6NW-NZ-nFK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yd9-9u-tRc">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="连接"/>
+                                <connections>
+                                    <action selector="connect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="24G-28-GIN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Yd9-9u-tRc" firstAttribute="top" secondItem="lW2-Rc-tga" secondAttribute="bottom" constant="34" id="795-YY-pvK"/>
+                            <constraint firstItem="lW2-Rc-tga" firstAttribute="top" secondItem="uHI-GU-IXN" secondAttribute="bottom" constant="25" id="AyC-vB-j6R"/>
+                            <constraint firstItem="uHI-GU-IXN" firstAttribute="centerX" secondItem="lW2-Rc-tga" secondAttribute="centerX" id="FEf-MS-Hec"/>
+                            <constraint firstItem="uHI-GU-IXN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="46" id="Lti-N6-R0s"/>
+                            <constraint firstItem="uHI-GU-IXN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="31" id="Phg-L0-KeB"/>
+                            <constraint firstItem="uHI-GU-IXN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t1f-6m-95A"/>
+                            <constraint firstItem="Yd9-9u-tRc" firstAttribute="leading" secondItem="lW2-Rc-tga" secondAttribute="leading" id="zWY-bX-mVD"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="uHI-GU-IXN"/>
+                                <exclude reference="lW2-Rc-tga"/>
+                                <exclude reference="Yd9-9u-tRc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="FEf-MS-Hec"/>
+                                <exclude reference="Lti-N6-R0s"/>
+                                <exclude reference="Phg-L0-KeB"/>
+                                <exclude reference="t1f-6m-95A"/>
+                                <exclude reference="795-YY-pvK"/>
+                                <exclude reference="zWY-bX-mVD"/>
+                                <exclude reference="AyC-vB-j6R"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="uHI-GU-IXN"/>
+                                <include reference="lW2-Rc-tga"/>
+                                <include reference="Yd9-9u-tRc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="FEf-MS-Hec"/>
+                                <include reference="Lti-N6-R0s"/>
+                                <include reference="Phg-L0-KeB"/>
+                                <include reference="t1f-6m-95A"/>
+                                <include reference="795-YY-pvK"/>
+                                <include reference="zWY-bX-mVD"/>
+                                <include reference="AyC-vB-j6R"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="uHI-GU-IXN" id="kUl-vC-HFh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="279" y="305"/>
+        </scene>
+    </scenes>
+</document>
