@@ -1,13 +1,13 @@
 //
-//  chatClient.h
+//  membersTVC.h
 //  networkSocket
 //
-//  Created by SHF on 16/3/31.
+//  Created by SHF on 16/4/2.
 //  Copyright © 2016年 SHF. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface chatClient : UITableViewController
+@interface membersTVC : UITableViewController
 
 @end

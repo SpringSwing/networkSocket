@@ -8,19 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		19FFF7C5C17CDC5E2F99E9DE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96928D7CC9F70F9FC8CAE62D /* libPods.a */; };
+		E62930EA1CB3EE6D000B0FCA /* sendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E62930E91CB3EE6D000B0FCA /* sendCell.m */; };
+		E62930ED1CB3EE84000B0FCA /* reciveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E62930EC1CB3EE84000B0FCA /* reciveCell.m */; };
+		E62930F01CB3F00A000B0FCA /* recive.png in Resources */ = {isa = PBXBuildFile; fileRef = E62930EE1CB3F00A000B0FCA /* recive.png */; };
+		E62930F11CB3F00A000B0FCA /* send.png in Resources */ = {isa = PBXBuildFile; fileRef = E62930EF1CB3F00A000B0FCA /* send.png */; };
 		E65E7DBE1CAAD03F00E4F314 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E7DBD1CAAD03F00E4F314 /* main.m */; };
 		E65E7DC11CAAD03F00E4F314 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E7DC01CAAD03F00E4F314 /* AppDelegate.m */; };
 		E65E7DC41CAAD03F00E4F314 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E7DC31CAAD03F00E4F314 /* ViewController.m */; };
 		E65E7DC71CAAD03F00E4F314 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E65E7DC51CAAD03F00E4F314 /* Main.storyboard */; };
 		E65E7DC91CAAD03F00E4F314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E65E7DC81CAAD03F00E4F314 /* Assets.xcassets */; };
 		E65E7DCC1CAAD03F00E4F314 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E65E7DCA1CAAD03F00E4F314 /* LaunchScreen.storyboard */; };
-		E65E7DFA1CAD547C00E4F314 /* chatClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E7DF91CAD547C00E4F314 /* chatClient.m */; };
+		E65E7E001CAD592A00E4F314 /* messageData.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E7DFF1CAD592A00E4F314 /* messageData.m */; };
+		E65E7E031CAF961400E4F314 /* membersTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E65E7E021CAF961400E4F314 /* membersTVC.m */; };
+		E66B51151CB11F7400E360DC /* udpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E66B51141CB11F7400E360DC /* udpSocket.m */; };
+		E6B322D31CB0206700CD0FAF /* loginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B322D21CB0206700CD0FAF /* loginVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		571D7C69D06807D3F79BECC0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		96928D7CC9F70F9FC8CAE62D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8040301807CFBEBBAE98EC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E62930E81CB3EE6D000B0FCA /* sendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sendCell.h; sourceTree = "<group>"; };
+		E62930E91CB3EE6D000B0FCA /* sendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sendCell.m; sourceTree = "<group>"; };
+		E62930EB1CB3EE84000B0FCA /* reciveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reciveCell.h; sourceTree = "<group>"; };
+		E62930EC1CB3EE84000B0FCA /* reciveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = reciveCell.m; sourceTree = "<group>"; };
+		E62930EE1CB3F00A000B0FCA /* recive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recive.png; sourceTree = "<group>"; };
+		E62930EF1CB3F00A000B0FCA /* send.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = send.png; sourceTree = "<group>"; };
 		E65E7DB91CAAD03F00E4F314 /* networkSocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = networkSocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E65E7DBD1CAAD03F00E4F314 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E65E7DBF1CAAD03F00E4F314 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -31,8 +44,14 @@
 		E65E7DC81CAAD03F00E4F314 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E65E7DCB1CAAD03F00E4F314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E65E7DCD1CAAD03F00E4F314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E65E7DF81CAD547C00E4F314 /* chatClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chatClient.h; sourceTree = "<group>"; };
-		E65E7DF91CAD547C00E4F314 /* chatClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chatClient.m; sourceTree = "<group>"; };
+		E65E7DFE1CAD592A00E4F314 /* messageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = messageData.h; sourceTree = "<group>"; };
+		E65E7DFF1CAD592A00E4F314 /* messageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = messageData.m; sourceTree = "<group>"; };
+		E65E7E011CAF961400E4F314 /* membersTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = membersTVC.h; sourceTree = "<group>"; };
+		E65E7E021CAF961400E4F314 /* membersTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = membersTVC.m; sourceTree = "<group>"; };
+		E66B51131CB11F7400E360DC /* udpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = udpSocket.h; sourceTree = "<group>"; };
+		E66B51141CB11F7400E360DC /* udpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = udpSocket.m; sourceTree = "<group>"; };
+		E6B322D11CB0206700CD0FAF /* loginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginVC.h; sourceTree = "<group>"; };
+		E6B322D21CB0206700CD0FAF /* loginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +83,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E62930F31CB3FFE1000B0FCA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E62930E81CB3EE6D000B0FCA /* sendCell.h */,
+				E62930E91CB3EE6D000B0FCA /* sendCell.m */,
+				E62930EB1CB3EE84000B0FCA /* reciveCell.h */,
+				E62930EC1CB3EE84000B0FCA /* reciveCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		E65E7DB01CAAD03F00E4F314 = {
 			isa = PBXGroup;
 			children = (
@@ -89,9 +119,16 @@
 				E65E7DC01CAAD03F00E4F314 /* AppDelegate.m */,
 				E65E7DC21CAAD03F00E4F314 /* ViewController.h */,
 				E65E7DC31CAAD03F00E4F314 /* ViewController.m */,
-				E65E7DF81CAD547C00E4F314 /* chatClient.h */,
-				E65E7DF91CAD547C00E4F314 /* chatClient.m */,
+				E62930F31CB3FFE1000B0FCA /* Cell */,
+				E65E7DFE1CAD592A00E4F314 /* messageData.h */,
+				E65E7DFF1CAD592A00E4F314 /* messageData.m */,
+				E65E7E011CAF961400E4F314 /* membersTVC.h */,
+				E65E7E021CAF961400E4F314 /* membersTVC.m */,
+				E66B51131CB11F7400E360DC /* udpSocket.h */,
+				E66B51141CB11F7400E360DC /* udpSocket.m */,
 				E65E7DC51CAAD03F00E4F314 /* Main.storyboard */,
+				E6B322D11CB0206700CD0FAF /* loginVC.h */,
+				E6B322D21CB0206700CD0FAF /* loginVC.m */,
 				E65E7DC81CAAD03F00E4F314 /* Assets.xcassets */,
 				E65E7DCA1CAAD03F00E4F314 /* LaunchScreen.storyboard */,
 				E65E7DCD1CAAD03F00E4F314 /* Info.plist */,
@@ -103,6 +140,8 @@
 		E65E7DBC1CAAD03F00E4F314 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E62930EE1CB3F00A000B0FCA /* recive.png */,
+				E62930EF1CB3F00A000B0FCA /* send.png */,
 				E65E7DBD1CAAD03F00E4F314 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -142,6 +181,7 @@
 				TargetAttributes = {
 					E65E7DB81CAAD03F00E4F314 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 9LP5S5ADC7;
 					};
 				};
 			};
@@ -169,7 +209,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E65E7DCC1CAAD03F00E4F314 /* LaunchScreen.storyboard in Resources */,
+				E62930F01CB3F00A000B0FCA /* recive.png in Resources */,
 				E65E7DC91CAAD03F00E4F314 /* Assets.xcassets in Resources */,
+				E62930F11CB3F00A000B0FCA /* send.png in Resources */,
 				E65E7DC71CAAD03F00E4F314 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,8 +273,13 @@
 			files = (
 				E65E7DC41CAAD03F00E4F314 /* ViewController.m in Sources */,
 				E65E7DC11CAAD03F00E4F314 /* AppDelegate.m in Sources */,
-				E65E7DFA1CAD547C00E4F314 /* chatClient.m in Sources */,
+				E66B51151CB11F7400E360DC /* udpSocket.m in Sources */,
+				E65E7E031CAF961400E4F314 /* membersTVC.m in Sources */,
 				E65E7DBE1CAAD03F00E4F314 /* main.m in Sources */,
+				E62930EA1CB3EE6D000B0FCA /* sendCell.m in Sources */,
+				E6B322D31CB0206700CD0FAF /* loginVC.m in Sources */,
+				E65E7E001CAD592A00E4F314 /* messageData.m in Sources */,
+				E62930ED1CB3EE84000B0FCA /* reciveCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +392,7 @@
 			baseConfigurationReference = 571D7C69D06807D3F79BECC0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = networkSocket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shf.networkSocket;
@@ -357,6 +405,7 @@
 			baseConfigurationReference = AB8040301807CFBEBBAE98EC /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = networkSocket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shf.networkSocket;
